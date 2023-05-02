@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Finaltask2.js"></script>
+    <title>Order Summary</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<h2>Final Task 2</h2>
+<div>
+    <fieldset style="width:300px">
+        <table>
+            <tr>
+                <td>Basketball Products<input type="text" id="BASKETBALL" value="0" size="8">
+                <button type="button" onclick="increment()">+</button>
+                <button type="button" onclick="decrement()">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Shipping and Handling:
+                <input type="text" id="ShippingFee" value="4.99" size="8">
+                <br>
+                <button type="button" onclick="calculate()">Calculate</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+<br>
+
+<h3>Order Summary</h3>
+    <table>
+        <tr>
+            <td>Items</td>
+            <td id="Items">0</td>
+        </tr>
+        <tr>
+            <td>Shipping & Handling:</td>
+            <td id="Shipping">0</td>
+        </tr>
+        <tr>
+            <td><h2></h2></td>
+        </tr>
+        <tr>
+            <td>Total Before Tax:</td>
+            <td id="BeforeTax">$0.00</td>
+        </tr>
+            <td>Estimated 10% Tax:</td>
+            <td id="EstimatedTax">$0.00</td>
+        </tr>
+        <td><h2></h2></td>
+        </tr>
+        <tr>
+            <td class="Order">Order Total:</td>
+            <td id="Total">$0.00</td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    body{
+        font-family: Arial;
+    }
+    .Order{
+        color: red;
+        font-weight: bold;
+    }
+</style>
+
+</body>
+</html>
